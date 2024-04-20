@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     width: 100%;
     height: 100%;
     display: flex;
@@ -11,27 +12,26 @@ body{
     justify-content: flex-start;
     align-items: center;
 }
-header{
+
+header {
     width: 60%;
- 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-#logo{
+
+#logo {
     height: 50px;
-    
 }
+
 nav {
     width: 60%;
-
-  
     padding: 10px 0;
     margin: 10px;
 }
 
-ul{
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -54,10 +54,11 @@ li:hover {
 .buscar {
     margin-left: auto;
     padding: 5px;
-    margin: 5PX;
+    margin: 5px;
     width: 300px;
 }
-#novedades{
+
+#novedades {
     width: 60%;
     height: 200px;
     border: solid;
@@ -65,37 +66,77 @@ li:hover {
     background-color: rgb(29, 28, 28);
     color: white;
 }
-h1{
+
+h1 {
     padding: 20px;
 }
-.noved{
+
+.noved {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
 }
-.noveda{
+
+.noveda {
     background-color: white;
 }
-#banner{
+
+#banner {
     width: 60%;
-  
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-#imageban{
+
+#imageban {
     width: 99.5%;
 }
-#productos{
+
+#productos {
     width: 60%;
-
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column; /* Cambia la dirección del flexbox a columna */
+    align-items: center; /* Centra los elementos en el eje horizontal */
 }
-.prendas{
+
+.prendas {
     width: 30%;
-
+}
+.producto {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 30%;
+    text-align: center;
 }
 
+.producto img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    margin-bottom: 10px;
+}
+
+.producto button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #0056b3;
+}
